@@ -1,7 +1,7 @@
 ---
-title: 'About Reac.dev'
+title: 'About Laura'
 layout: 'layouts/about.html'
-custom_css: 
+custom_css:
 ---
 
 

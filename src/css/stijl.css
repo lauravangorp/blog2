@@ -1,15 +1,5 @@
 
 
-main h2 {
-	font-size: 2.25rem;
-	font-weight: 600;
-	margin-bottom: 5rem;
-	padding-bottom: 3rem;
-	border-bottom: .2rem solid #38373e;
-	text-transform: uppercase;
-	line-height: 3.5rem;
-}
-
 main p {
 	line-height: 3rem;
 	margin-bottom: 3rem;
@@ -19,41 +9,10 @@ img {
 	max-width: 100%;
 }
 
-main img {
-	display: block;
-	margin: 0 auto 3rem auto;
-}
-
-main h3 {
-	font-size: 2.25rem;
-	font-weight: 600;
-	margin-bottom: 5rem;
-	padding-bottom: 3rem;
-	border-bottom: .2rem solid #38373e;
-}
-
-main h4 {
-	font-size: 2.25rem;
-	font-weight: 600;
-	margin-bottom: 5rem;
-	text-transform: uppercase;
-}
 
 main a {
 	text-decoration: none;
 	color: #38373e;
-}
-
-main ul.blog li a {
-	color: firebrick;
-}
-
-main ul.blog li {
-	margin-bottom: 2rem;
-}
-
-main {
-	margin-bottom: 5rem;
 }
 
 ul.taglist, ul.postlist {
@@ -70,60 +29,44 @@ ul.taglist li a, ul.postlist li a {
 	padding: .75rem;
 }
 
-a.morelink {
-	display: inline-block;
-	background-color: #38373e;
-	color: #faf0e4;
-	padding: .75rem;
-	margin-bottom: 3rem;
-}
 
 nav.pagination a {
 	display: inline-block;
-	background-color: #38373e;
-	color: #faf0e4;
-	padding: 1.25rem;
+	color: black;
+	padding: 1rem;
 	margin-bottom: 3rem;
+	border:1px solid black;
 }
 
-footer {
-	border-top: 0.2rem solid #38373e;
-	padding-top: 3rem;
+nav.pagination a:hover {
+	color: white;
+	background-color: black;
 }
 
-
-@media (min-width: 1000px) {
-	body {
-			width: 75vw;
-	}
-
-}
+/* eigen code */
 
 body {
 	font-size: 1.7rem;
 	background: white;
 	color: black;
-	font-family: "helvetica neue",helvetica;
+		font-family: 'Libre Caslon Display', serif;
 	transition: 1s all;
 	line-height: 3rem;
-	padding: 2rem;
+	padding: 3rem;
 	overflow-x: hidden;
-  /* background:
-    linear-gradient(45deg, transparent 74px, transparent 75px, #161616 75px, #161616 76px, transparent 77px, transparent 109px),
-    linear-gradient(-45deg, transparent 75px, transparent 76px, #161616 76px, #161616 77px, transparent 78px, transparent 109px),
-  #0D0D0D;
-  background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
-  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;*/
 }
 
 b{
-	font-weight: 500;
+	font-weight: 900;
+}
+
+main{
+	margin-bottom: 3rem;
 }
 
 /* header */
 
 nav {
-	margin-bottom: 25px;
 	padding: 2rem;
 	text-align: center;
 	position: relative;
@@ -162,7 +105,7 @@ header {
 	position: relative;
 	border-bottom: 1px solid black;
 	z-index: 100;
-	margin-bottom: 5rem;
+	margin-bottom: 2rem;
 }
 
 header nav ul li a.selected {
@@ -170,6 +113,7 @@ header nav ul li a.selected {
 	border-radius: 1rem;
 }
 
+/* main */
 
 main h2 {
 	font-size: 4rem;
@@ -177,12 +121,11 @@ main h2 {
 	margin-bottom: 3rem;
 	font-weight: 500;
 	margin-bottom: 3rem;
-	font-weight: 500;
-	margin-bottom: 3rem;
 	font-family: 'Libre Caslon Display', serif;
 	font-style: normal;
 	text-transform: uppercase;
 	}
+
 
 main p {
 	line-height: 3rem;
@@ -198,17 +141,18 @@ main p {
  background-repeat: no-repeat;
  border:none;
  background-position: center;
+ position: relative;
 }
 
 .homepagetitel {
-	padding-top: 3rem;
+	padding-top: 14rem;
 	padding-bottom: 3rem;
 	font-size: 10rem;
 	color: #FDEA07;
 	transform: rotate(50deg);
 	position: absolute;
-	top:59rem;
-	right: 1rem;
+	top:10rem;
+	left:10%;
 	font-weight: 900;
 	z-index: 100;
 }
@@ -254,7 +198,7 @@ main h3 {
 	font-family: freight-big-pro, serif;
 	font-style: normal;
 	text-transform: uppercase;
-	margin-top: 2rem;
+	margin-top: 9rem;
 	margin-left: 2rem;
 }
 
@@ -265,23 +209,56 @@ main h4 {
 	margin-top: 2rem;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: minion-3-display, serif;
 	font-weight: 500;
 	font-style: normal;
 }
 
-main ul.blog li a {
-	color: orange;
+
+	.leeg h2{
+		border-bottom: 1px solid black;
+		padding-bottom: 3rem;
+	}
+
+	.bloglist li{
+		margin-bottom: 5rem;
+	}
+
+
+	.bloglist h4{
+		font-size: 3rem;
+		transition: all 1s;
+			margin-bottom: 1.8rem;
+	}
+
+	.bloglist h4:hover{
+		color: grey;
+	}
+
+	.bloglist p{
+		font-size: 2rem;
+		transition: all 1s;
+	}
+
+	.bloglist p:hover{
+		color: grey;
+	}
+
+
+
+.morelink{
+	width:30rem;
+	padding: 1rem;
+	border:1px solid black;
+	transition: all 1s;
+	font-size: 1.8rem;
 }
 
-main ul.blog li {
-	margin-bottom: 2rem;
-	margin-left: 5rem;
-	margin-right: 5rem;
-}
-
-main {
-	margin-bottom: 5rem;
+.morelink:hover{
+	width:30rem;
+	padding: 1rem;
+	border:1px solid black;
+	color: white;
+	background-color: black;
 }
 
 .footertekst{
@@ -323,7 +300,8 @@ footer{
 	padding-top: 2rem;
 }
 
-/*form*/
+
+ /*form
 
 #form {
   position: relative;
@@ -385,6 +363,8 @@ textarea:hover {
   color: black;
 }
 
+*/
+
 @media (min-width: 600px) {
 	.works{
 		column-count: 2;
@@ -402,31 +382,6 @@ textarea:hover {
 	.grid img{
 		margin-bottom: 0;
 	}
-
-	.fullpage{
-				display: grid;
-				grid-template-columns: 1.3fr 1fr;
-				height: 100vh;
-				z-index: 3;
-			}
-
-			.leeg{
-				grid-column: 1;
-			}
-
-
-			.homepagetitel {
-				padding-top: 3rem;
-				padding-bottom: 3rem;
-				font-size: 10rem;
-				color: #FDEA07;
-				transform: rotate(50deg);
-				position: absolute;
-				top:10rem;
-				right: 1rem;
-				font-weight: 900;
-				z-index: 100;
-			}
 
 	img {
 		max-width: 100%;
@@ -459,25 +414,6 @@ textarea:hover {
 		grid-row: 1/3;
 	}
 
-	.foto{
-	 background-image: url(../img/portret.jpg);
-	 height: 100vh;
-	 background-repeat: no-repeat;
-	 border:none;
-	}
-
-	.homepagetitel {
-		padding-top: 14rem;
-		padding-bottom: 3rem;
-		font-size: 10rem;
-		color: #FDEA07;
-		transform: rotate(50deg);
-		position: absolute;
-		top:45rem;
-		right: -10rem;
-		font-weight: 900;
-		z-index: 100;
-	}
 }
 
 
@@ -521,40 +457,6 @@ header nav ul li {
 		max-width: 45%;
 		margin-left: 10%;
 	}
-/*
-		.experiment1{
-		      width: 40vw;
-		      height: 40vw;
-		      border-radius: 50%;
-		      font-size: 20rem;
-		      overflow: hidden;
-		      padding-left: 2rem;
-					margin-left: 10%;
-		}
-
-		.experiment2{
-		      width: 29vw;
-		      height: 29vw;
-		      border-radius: 50%;
-		      font-size: 20rem;
-		      overflow: hidden;
-		      padding-left: 6rem;
-					margin-left: 45%;
-					margin-top:-10rem;
-		}
-
-		.experiment3{
-		      width: 35vw;
-		      height: 35vw;
-		      border-radius: 50%;
-		      font-size: 17rem;
-		      overflow: hidden;
-		      padding-left: 0rem;
-					padding-top: 4rem;
-					margin-left: 10%;
-					line-height: 20rem;
-					margin-top: -6.4rem;
-		}*/
 
 			#form {
 			  position: relative;
@@ -566,19 +468,48 @@ header nav ul li {
 			margin-left: 30%;
 		}
 
-		.homepagetitel {
-			padding-top: 14rem;
-			padding-bottom: 3rem;
-			font-size: 10rem;
-			color: #FDEA07;
-			transform: rotate(50deg);
-			position: absolute;
-			top:30rem;
-			right: -1%;
-			font-weight: 900;
-			z-index: 100;
-		}
+			.fullpage{
+						display: grid;
+						grid-template-columns: 1.3fr 1fr;
+						height: auto;
+						z-index: 3;
+					}
+					.bloglist img{
+						width: 60%;
+					}
 
+					.leeg h2{
+						margin-top: -4rem;
+					}
+
+					.leeg p{
+						margin-bottom: 3rem;
+					line-height: 2.4rem;}
+
+					main p {
+						line-height: 2rem;
+						margin-bottom: 1rem;
+						font-size: 1.9rem;
+					}
+
+					.blogfeed li a{
+						display: grid;
+						grid-template-columns: 1.5fr 1fr;
+					}
+
+					.blogfeed li img{
+						grid-column: 1;
+						margin-top: -9rem;
+					}
+
+					.blogfeed li h4{
+						grid-column: 2;
+						margin-top: 9rem;
+					}
+
+					.blogfeedtitel{
+						margin-top: 4rem;
+					}
 		}
 
 @media (min-width: 1200px) {
@@ -595,6 +526,11 @@ header nav ul li {
 		header{
 			border-bottom: none;
 		}
+
+		.leeg{
+			font-size: 3rem;
+		}
+
 		.homepagetitel {
 			padding-top: 14rem;
 			padding-bottom: 3rem;
@@ -602,21 +538,10 @@ header nav ul li {
 			color: #FDEA07;
 			transform: rotate(50deg);
 			position: absolute;
-			top:30rem;
-			right: 5%;
+			top:10rem;
+			left:17%;
 			font-weight: 900;
 			z-index: 100;
-		}
-		.fullpage{
-			display: grid;
-			grid-template-columns: 1.3fr 1fr;
-			height: 100vh;
-			z-index: 3;
-		}
-
-		.leeg{
-			grid-column: 1;
-			font-size: 3rem;
 		}
 
 }
