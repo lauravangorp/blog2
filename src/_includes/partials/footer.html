@@ -1,2 +1,9 @@
+<ul class="footernav">
+  {% for item in navigatie.items %}
+  <li>
+    <a href="{{ item.url }}" {{ helpers.getLinkActiveState(item.url, page.url) | safe }}>{{ item.text }}</a>
+  </li>
+  {% endfor %}
+</ul>
 <p class="footerlogo">inspi.red</p>
 <p class="footertekst">This site is made as a schoolassignment, made with 11ty</p>

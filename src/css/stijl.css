@@ -110,7 +110,6 @@ header {
 
 header nav ul li a.selected {
 	color: grey;
-	border-radius: 1rem;
 }
 
 /* main */
@@ -119,8 +118,8 @@ main h2 {
 	font-size: 4rem;
 	font-weight: 600;
 	margin-bottom: 3rem;
+	padding-top: 3rem;
 	font-weight: 500;
-	margin-bottom: 3rem;
 	font-family: 'Libre Caslon Display', serif;
 	font-style: normal;
 	text-transform: uppercase;
@@ -294,11 +293,50 @@ main h4 {
 
 footer{
 	border-top: 1px solid black;
-}
-
-footer{
 	padding-top: 2rem;
 }
+
+footer a {
+	text-decoration: none;
+	color: black;
+	margin: 0;
+	padding-right: 1.5rem;
+	text-transform: uppercase;
+	font-family: 'Libre Caslon Display', serif;
+	font-size: 1.3rem;
+	z-index: 100;
+	transition: 1s;
+}
+
+footer a:hover{
+	color: grey;
+	padding-top: 1rem;
+}
+
+footer ul {
+	display: flex;
+	flex-direction: row;
+	padding: 2rem;
+	padding-left: 0rem;
+	padding-top:0rem;
+	text-align: center;
+	position: relative;
+	z-index: 100;
+}
+
+footer ul li a.selected {
+	color: grey;
+}
+
+
+/*.fixed{
+  position: fixed;
+  background-color: white;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+}*/
 
 
  /*form
@@ -510,6 +548,26 @@ header nav ul li {
 					.blogfeedtitel{
 						margin-top: 4rem;
 					}
+
+					footer{
+						position: relative;
+					}
+
+					footer ul {
+						display: flex;
+						flex-direction: row;
+						justify-content: space-between;
+						margin-top: 0;
+						position: absolute;
+						right: 5%;
+						top: 0rem;
+						padding: 2rem;
+					}
+
+				footer ul li {
+						margin-top: 0;
+					}
+
 		}
 
 @media (min-width: 1200px) {
@@ -542,6 +600,10 @@ header nav ul li {
 			left:17%;
 			font-weight: 900;
 			z-index: 100;
+		}
+
+		footer ul {
+			right: 42%;
 		}
 
 }
