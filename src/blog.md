@@ -10,4 +10,4 @@ custom_css:
 ---
 
 
-Here you can find interesting blogs I have found on the internet about the artists that inspire me.
+<p class='intro'> Here you can find interesting blogs I have found on the internet about the artists that inspire me. </p>
