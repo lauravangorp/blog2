@@ -673,6 +673,8 @@ header nav ul li {
 			margin-bottom: 3rem;
 			display: inline;
 			margin-right: 2rem;
+			line-height: 5rem;
+			display: inline-block;
 		}
 
 		.homepagetitel {
