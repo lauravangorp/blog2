@@ -1,4 +1,19 @@
+	#rond{
+		display: inline;
+		width: 35%;
+		animation: draai 20s infinite linear;
+		position: absolute;
+		top: 57rem;
+	}
 
+	@keyframes draai {
+		from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+	}
 
 main p {
 	line-height: 3.3rem;
@@ -466,6 +481,12 @@ textarea:hover {
 */
 
 @media (min-width: 600px) {
+	#rond{
+		display: inline;
+		width: 18%;
+		top: 44.7rem;
+	}
+
 	.works{
 		column-count: 2;
 		gap: 40px;
