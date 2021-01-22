@@ -3,7 +3,7 @@ title: 'Blog'
 layout: 'layouts/blog.html'
 pagination:
   data: collections.blog
-  size: 9
+  size: 6
 paginationPrevText: 'See newer posts'
 paginationNextText: 'See older posts'
 custom_css:
